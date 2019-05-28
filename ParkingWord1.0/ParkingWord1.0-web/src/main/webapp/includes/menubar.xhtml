@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui">
+
+    <ul class="nav navbar-nav">
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Home<span
+                    class="caret"></span>
+            </a>
+            <ul class="dropdown-menu multi-level" role="menu" >
+                <li>
+                    <p:link outcome="/index.xhtml">
+                        <i class="fa fa-home"></i>
+                        <span>Home</span>
+                    </p:link>
+                </li>
+                <li>
+                    <a href="https://www.google.com/" target="_blank">
+                        <i class="fa fa-book"></i>
+                        <span>Documentacion</span>
+                    </a>
+                </li>
+                <li>
+                    <p:link outcome="/pages/analytics/analytics.xhtml">
+                        <i class="fa fa-pie-chart"></i>
+                        <span>Analisis</span>
+                    </p:link>
+                </li>
+
+
+
+                <!--subMenu -->
+                <li class="dropdown-submenu">
+                    <a tabindex="-1" href="#">
+                        <span>Sub Menu</span>
+                        <i class="fa fa-share"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+
+                    </ul>
+                </li>
+            </ul>
+        </li>   
+
+
+
+
+        <!--
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Empresas <span
+                    class="caret"></span>
+                <i class="fa fa-files-o"></i>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+                <li>
+                    <p:link outcome="/pages/Empresa/Empresa.xhtml">
+                        <i class="fa fa-edit"></i>
+                        <span>Registro de Empresas</span>
+                    </p:link>
+                </li>
+                
+            </ul>
+        </li>
+        -->
+        
+
+
+
+
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Prueba<span
+                    class="caret"></span>
+                <i class="fa fa-wpforms"></i>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+
+                <li>
+                    <p:link href="/default-layout" onclick="toggleTemplate();return false">
+                        <i class="fa fa-list-ul"></i>
+                        <span><b>Default</b> menu layout</span>
+                    </p:link>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</ui:composition>
