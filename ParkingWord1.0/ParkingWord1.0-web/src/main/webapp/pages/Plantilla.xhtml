@@ -1,0 +1,99 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:pt="http://xmlns.jcp.org/jsf/passthrough"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:adm="http://github.com/adminfaces"
+                template="#{layoutMB.template}">
+
+    <ui:define name="metadata">
+        <f:metadata>
+            <f:viewParam name="flat" value="#{layoutMB.flat}" converter="javax.faces.Boolean"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1" http-equiv="X-UA-Conpatible" />            
+        </f:metadata>
+    </ui:define>
+
+    <ui:define name="head-end">
+        <h:outputStylesheet library="css" name="bootstrap.min.css" />        
+        <style type="text/css">
+            .col-xs-updated {
+                width: 92% !important;
+            }
+            .ui-selectonemenu-label{
+                width:100% !important;
+            }
+            .ui-selectonemenu{
+                width:100% !important;
+                padding: 0px !important;
+            }  
+            .ui-selectonemenu .ui-selectonemenu-trigger {
+                width: 25px;
+                height: 100%;
+            }
+            .inputNumber input
+            {
+                width: 100% !important;
+            }
+            .text100{
+                width:100% !important;
+            }
+            .navbar-inverse .navbar-brand {
+                color: #fff;
+            }
+            .navbar-inverse .navbar-brand:hover,
+            .navbar-inverse .navbar-brand:focus {
+                color: #fff;
+                background-color: transparent;
+            }
+            .btn-primary {
+                color: #fff;
+                background-color: #000000;
+                border-color: #c0c0c0;
+            }
+            .btn-primary:focus,
+            .btn-primary.focus {
+                color: #fff;
+                background-color: #222222;
+                border-color: #c0c0c0;
+            }
+            .btn-primary:hover {
+                color: #fff;
+                background-color: #222222;
+                border-color: #c0c0c0;
+            }
+            .btn-primary:active:hover,
+            .btn-primary.active:hover,
+            .open > .dropdown-toggle.btn-primary:hover,
+            .btn-primary:active:focus,
+            .btn-primary.active:focus,
+            .open > .dropdown-toggle.btn-primary:focus,
+            .btn-primary:active.focus,
+            .btn-primary.active.focus,
+            .open > .dropdown-toggle.btn-primary.focus {
+                color: #fff;
+                background-color: #222222;
+                border-color: #c0c0c0;
+            }
+            .captcha {
+                width: 304px;
+                margin: 0 auto;
+            }
+
+        </style>
+    </ui:define>
+
+    <ui:define name="title">
+        Titulo
+    </ui:define>
+
+    <ui:define name="description">
+        Descripcion Modulo
+    </ui:define>
+
+    
+    <ui:define name="body">
+           
+        
+    </ui:define>
+</ui:composition>
