@@ -1,12 +1,48 @@
-<?xml version='1.0' encoding='UTF-8' ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://xmlns.jcp.org/jsf/html">
-    <h:head>
-        <title>Facelet Title</title>
-    </h:head>
-    <h:body>
-        Hello from Facelets
-    </h:body>
-</html>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                template="#{layoutMB.template}">
 
+
+    <ui:param name="renderBreadCrumb" value="false"/>
+
+    <ui:define name="title">
+        <div class="pull-right hidden-xs">
+            <a href="https://adminfaces.github.io/site/" target="_blank">
+                <h:graphicImage library="images" name="logo.png" height="100" width="100"/>
+            </a>
+        </div>
+        <p:growl autoUpdate="true" life="4000"/>
+
+        <h2 class="align-center">
+            Bienvenidos a <span class="text-aqua"> <i><a href="https://adminfaces.github.io/site/" target="_blank"
+                                                          style="text-transform: none;text-decoration: none"> ParkingWord</a></i></span> !
+            <br/>
+            <small>Integrando <p:link value="Primefaces" href="http://primefaces.org"/>, <p:link value="Bootstrap"
+                                                                                                  href="http://getbootstrap.com/"/> y                
+                <p:link value="JSF" href="https://javaserverfaces.java.net/"/> application.
+            </small>
+        </h2>
+    </ui:define>
+
+
+    <ui:define name="body">
+        <div class="box box-primary" style="font-family: 'Helvetica Neue';font-size: 15px">
+            <div class="box-header with-border">
+                <a href="http://localhost:8080/Template/index.xhtml" target="_blank"><b>ParkingWord</b></a> está compuesto por los siguientes proyectos:
+            </div>
+            <div class="box-body">
+                <ul>
+                    <li>
+                        <p:link value="ParkingWord" href="http://localhost:8080/Template/index.xhtml"/>: Es un <i><p:link
+                                value="Primefaces theme" href="http://primefaces.org/themes"/> </i> Basado en <p:link
+                            value="Bootstrap" href="http://getbootstrap.com"/> donde los componentes de PrimeFaces se personalizan para que se vean como los marcos mencionados.
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        
+    </ui:define>
+</ui:composition>
